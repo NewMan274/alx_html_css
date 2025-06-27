@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 481px) {
   body {
     background-image: url(images/hero_images/headphones_hero_1.jpg);
