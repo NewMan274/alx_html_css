@@ -1,84 +1,215 @@
-body {
-  background-image: url(images/hero_images/headphones_hero_1.jpg);
-  display: grid;
-  grid-template-rows: auto auto auto;
-  margin: 0;
-  min-height: 100vh;
-  color: white;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+@media (min-width: 481px) {
+  body {
+    background-image: url(images/hero_images/headphones_hero_1.jpg);
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .menu-toggle,   
+  .hamburger {     
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 35px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+  }
+
+  a:hover {
+    color: red;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 220px;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    font-size:xx-large;
+  }
+
+  h1, p {
+    margin: 0;
+  }
+
+  .headline{
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  button {
+    background-color: #FF6565;   /* Bright red/pink */
+    color: white;                /* White text */
+    padding: 12px 30px;          /* Size and spacing */
+    border: none;                /* Remove border */
+    border-radius: 25px;         /* Rounded corners */
+    text-decoration: none;       /* Remove underline */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: inline-block;       /* Allows padding and alignment */
+    text-align: center;
+  }
+
+  .hero-writeUp {
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: azure;
+    font-size: 15px;
+  }
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  padding: 5px 10px;
-  margin: 0 auto;
-  width: 80%;
+
+@media (max-width: 480px) {
+  body {
+    background-image: url(images/hero_images/headphones_hero_1.jpg);
+    margin: 10px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    column-gap: 30px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    order: 1;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .line {
+    background-color: white;
+    height: 3px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .top, .bottom {
+    width: 24px;
+  }
+
+  .middle {
+    width: 14px;
+    align-self: flex-start;
+  }
+
+  .logo {
+    order: 2;
+  }
+
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    order: 3;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+  }
+
+  .menu-toggle:checked + .hamburger + .logo + .mobile-nav {
+    display: flex;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 180px;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    font-size:xx-large;
+  }
+
+  h1, p {
+    margin: 0;
+  }
+
+  .headline{
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  button {
+    background-color: #FF6565;   /* Bright red/pink */
+    color: white;                /* White text */
+    padding: 12px 30px;          /* Size and spacing */
+    border: none;                /* Remove border */
+    border-radius: 25px;         /* Rounded corners */
+    text-decoration: none;       /* Remove underline */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    display: inline-block;       /* Allows padding and alignment */
+    text-align: center;
+  }
+
+  .hero-writeUp {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: azure;
+    font-size: 15px;
+  }
+
 }
-
-nav {
-  display: flex;
-  gap: 35px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: small;
-}
-
-a:hover {
-  color: red;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  padding-top: 220px;
-}
-
-h1 {
-  font-size:xx-large;
-}
-
-h1, p {
-  margin: 0;
-}
-
-.headline{
-  text-align: center;
-  font-weight: bolder;
-}
-
-button {
-  background-color: #FF6565;   /* Bright red/pink */
-  color: white;                /* White text */
-  padding: 12px 30px;          /* Size and spacing */
-  border: none;                /* Remove border */
-  border-radius: 25px;         /* Rounded corners */
-  text-decoration: none;       /* Remove underline */
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  display: inline-block;       /* Allows padding and alignment */
-  text-align: center;
-}
-
-.hero-writeUp {
-  width: 35%;
-  margin: 0 auto;
-  padding-top: 15px;
-  text-align: center;
-  font-weight: normal;
-  color: azure;
-  font-size: 15px;
-}
-
-
