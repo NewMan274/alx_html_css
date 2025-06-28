@@ -140,6 +140,60 @@ html {
   h2 {
     margin: 0;
   }
+
+  .results-section {
+    break-before: page;
+    background-image: url(/headphones/images/hero_images/headphones_hero_2.jpg);
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .results-section p {
+    width: 55%;
+    align-self: center;
+    font-size: smaller;
+  }
+
+  .results-section h2 {
+    font-weight: bolder;
+    font-size:xx-large;
+  }
+
+  .pentagon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .pent{
+    width: 150px;
+    height: 150px;
+    background-color: #FF6565;
+    clip-path: polygon(
+      50% 0%,     /* top center */
+      100% 38%,   /* top right */
+      82% 100%,   /* bottom right */
+      18% 100%,   /* bottom left */
+      0% 38%      /* top left */
+    );
+  }
+
+  .pent h2 {
+    padding-top: 50px;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+
+  .pent p {
+    padding-top: 5px;
+    padding-left: 35px;
+  }
 }
 
 
@@ -311,5 +365,66 @@ html {
 
   h2 {
     margin: 0;
+  }
+
+
+  .results-section {
+    break-before: page;
+    background-image: url(/headphones/images/hero_images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .results-section p {
+    width: 55%;
+    align-self: center;
+    font-size: smaller;
+  }
+
+  .results-section h2 {
+    font-weight: bolder;
+    font-size:xx-large;
+  }
+
+  .pentagon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .pent{
+    width: 150px;
+    height: 150px;
+    background-color: #FF6565;
+    clip-path: polygon(
+      50% 0%,     /* top center */
+      100% 38%,   /* top right */
+      82% 100%,   /* bottom right */
+      18% 100%,   /* bottom left */
+      0% 38%      /* top left */
+    );
+  }
+
+  .pent h2 {
+    padding-top: 50px;
+    font-size: xx-large;
+    font-weight: bolder;
+  }
+
+  .pent p {
+    padding-top: 5px;
+    padding-left: 35px;
   }
 }
