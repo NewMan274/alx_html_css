@@ -132,6 +132,11 @@ html {
     gap: 5px;
   }
 
+  .individual:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
+  }
+
   .wwd-img {
     width: 80px;
     height: 80px;
@@ -171,6 +176,15 @@ html {
     padding-bottom: 50px;
   }
 
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
   .pent{
     width: 150px;
     height: 150px;
@@ -182,6 +196,12 @@ html {
       18% 100%,   /* bottom left */
       0% 38%      /* top left */
     );
+    transition: transform 0.4s ease-in-out;
+    animation: bounce 2s infinite;
+  }
+
+  .pent:hover {
+    transform: rotate(5deg) scale(1.1);
   }
 
   .pent h2 {
@@ -424,6 +444,11 @@ html {
     gap: 3px;
   }
 
+  .individual:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+
   .wwd-img {
     width: 60px;
     height: 60px;
@@ -470,6 +495,15 @@ html {
     padding-top: 50px;
   }
 
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
   .pent{
     width: 150px;
     height: 150px;
@@ -481,6 +515,7 @@ html {
       18% 100%,   /* bottom left */
       0% 38%      /* top left */
     );
+    animation: bounce 2s infinite;
   }
 
   .pent h2 {
